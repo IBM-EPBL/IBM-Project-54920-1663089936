@@ -5,7 +5,6 @@ import math
 import datetime
 from flask import Flask,render_template
 app=Flask(__name__)
-
 @app.route('/')
 
 def homer():
@@ -20,7 +19,5 @@ def homer():
     taba= datetime.datetime.now()
     msg4=" This is today's date time using \"datetime module\""
     return render_template('modules.html',msg=msg,msg1=msg1,tada=tada,tana=tana,msg2=msg2,msg3=msg3,taba=taba,msg4=msg4)
-
-
 if __name__=='__main__':
     app.run()
